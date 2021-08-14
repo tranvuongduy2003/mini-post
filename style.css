@@ -1,0 +1,134 @@
+html {
+  font-family: "Montserrat", sans-serif;
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #666;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: inline-block;
+}
+
+.post {
+  margin: 3rem;
+  padding: 3rem;
+  background-color: white;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.post__left, .post__right {
+  width: calc(50% - 1rem);
+}
+.post__media {
+  position: relative;
+}
+.post__image {
+  width: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+.post__image--small {
+  width: 35%;
+  height: 100%;
+}
+.post__category {
+  padding: 1rem 1.5rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 1.4rem;
+  color: white;
+  background: linear-gradient(to right, #f46b45, #eea849);
+  border-radius: 2rem;
+  z-index: 2;
+}
+.post__icon {
+  position: absolute;
+  bottom: 0;
+  right: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: white;
+  width: 5rem;
+  height: 5rem;
+  background: linear-gradient(to right, #f46b45, #eea849);
+  border-radius: 50%;
+  transform: translateY(50%);
+  z-index: 2;
+}
+.post-author {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  color: #999;
+  font-size: 1.4rem;
+}
+.post-author__avatar {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.post-author__name {
+  margin: 0 1rem;
+  padding-right: 1rem;
+  position: relative;
+}
+.post-author__name:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+  width: 0.5rem;
+  height: 0.5rem;
+  background: linear-gradient(to right, #f46b45, #eea849);
+  border-radius: 50%;
+}
+.post__date {
+  color: #999;
+  font-size: 1.4rem;
+}
+.post__content {
+  margin-top: 2rem;
+}
+.post__title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.post__title--small {
+  font-size: 1.8rem;
+}
+.post__desc {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.post__item {
+  width: 100%;
+  height: 20rem;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #EEE;
+}
+.post-item__content {
+  width: calc(65% - 1rem);
+}
+
+/*# sourceMappingURL=style.css.map */
